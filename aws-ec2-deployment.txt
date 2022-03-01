@@ -1,0 +1,11 @@
+1.Flask Code
+Run and check in Local
+Create AWS account
+Create EC2 instance
+Download putty and puttygen'
+Generate Private key with putty gen
+Download winscp
+Update the port in flask code
+install the libraries by connecting through putty
+python3 app.py
+web url and verify
