@@ -1,0 +1,93 @@
+Creating a new folder
+
+installing virtual environmenmt creator
+*****************************************
+pip install virtualenv (or) pip install --user virtualenv
+
+Creating a virtual environment named env
+******************************************
+virtualenv (or) python -m virtualenv venv
+
+
+Check the execution poliy
+*************************
+
+PS C:\Users\Ullas\Flask_own> Get-ExecutionPolicy
+Unrestricted
+
+if it is not unrestricted, make it unrestricted using powershell
+
+Set-ExecutionPolicy unrestricted
+
+Activate the virtual environment
+************************************
+
+.\env\Scripts\Activate.ps1 
+
+
+install the required libraries in new environment- env
+****************************************************
+pip install flask
+
+(env) PS C:\Users\Ullas\Flask_own> pip install flask
+Collecting flask
+
+finish the coding part
+
+
+login to heroku
+**************************************
+commands below
+
+heroku login
+
+intialize a git repositary
+**********************************************
+git init
+git add .
+git commit -m "Initial commmit"
+
+
+create a heroku app
+***********************************************
+heroku create todo-ullas-todo
+
+(env) PS C:\Users\Ullas\Flask_own> heroku create todo-ullas-todo
+Creating ⬢ todo-ullas-todo... done
+https://todo-ullas-todo.herokuapp.com/ | https://git.heroku.com/todo-ullas-todo.git
+(env) PS C:\Users\Ullas\Flask_own> 
+
+git remote -v
+
+(env) PS C:\Users\Ullas\Flask_own> git remote -v
+heroku  https://git.heroku.com/todo-ullas-todo.git (fetch)
+heroku  https://git.heroku.com/todo-ullas-todo.git (push)
+
+git push heroku master
+
+
+
+
+common commands
+*********************
+
+heroku login
+
+pip install gunicorn
+pip freeze > requirements.txt
+Procfile
+web:gunicorn app:app
+
+git init
+git add .
+git commit -m "Initial commmit"
+
+heroku create todo-codewithharry
+git remote -v
+git push heroku master
+
+
+
+
+
+
